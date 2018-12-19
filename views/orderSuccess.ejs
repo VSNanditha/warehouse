@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+    <script src="/javascripts/data.js"></script>
+</head>
+<body class="pattern">
+<div>
+    <h2>Order Placed Successfully!!</h2>
+    <div class="container">
+        <h3 style="margin: auto">Order Details</h3>
+        <br>
+        <div class="grid3">
+            <div class="grid-item">
+                <label for="warehouse">Warehouse: <%= warehouse %></label>
+            </div>
+
+            <div class="grid-item">
+                <label for="district">District: <%= district %></label>
+            </div>
+
+            <div class="grid-item">
+                <label for="date">Date: <%= date %></label>
+            </div>
+
+            <div class="grid-item">
+                <label for="customer">Customer: <%= customer %></label>
+            </div>
+
+            <div class="grid-item">
+                <label for="name">Name: <%= name %></label>
+            </div>
+
+            <div class="grid-item">
+                <label for="credit">Credit: <%= credit %></label>
+            </div>
+
+            <div class="grid-item">
+                <label for="discount">%Disc: <%= discount %></label>
+            </div>
+
+            <div class="grid-item">
+                <label for="order_number">Order Number: <%= order_number %></label>
+            </div>
+
+            <div class="grid-item">
+                <label for="no_lines">Number of Lines: <%= no_lines %></label>
+            </div>
+
+            <div class="grid-item">
+                <label for="w_tax">W_tax: <%= w_tax %></label>
+            </div>
+
+            <div class="grid-item">
+                <label for="d_tax">D_tax: <%= d_tax %> </label>
+            </div>
+        </div>
+        <br>
+        <table id="table" border="1">
+            <tr>
+                <th>Supp_W</th>
+                <th>Item_Id</th>
+                <th>Item Name</th>
+                <th>Qty</th>
+                <th>Stock</th>
+                <th>B/G</th>
+                <th>Price</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td><%= item1_Supp_W%></td>
+                <td><%= item1_Item_Id%></td>
+                <td><%= item1_Item_Name%></td>
+                <td><%= item1_Qty%></td>
+                <td><%= item1_Stock%></td>
+                <td><%= item1_B_G%></td>
+                <td><%= item1_Price%></td>
+                <td><%= item1_Amount%></td>
+            </tr>
+            <tr>
+                <td><%= item2_Supp_W%></td>
+                <td><%= item2_Item_Id%></td>
+                <td><%= item2_Item_Name%></td>
+                <td><%= item2_Qty%></td>
+                <td><%= item2_Stock%></td>
+                <td><%= item2_B_G%></td>
+                <td><%= item2_Price%></td>
+                <td><%= item2_Amount%></td>
+            </tr>
+        </table>
+        <br>
+        <div class="grid3">
+            <div class="grid-item">
+                <label for="execution">Execution Status: Success</label>
+            </div>
+
+            <div class="grid-item">
+                <label for="total">Total: <%= order_total %></label>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

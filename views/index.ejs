@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="pattern">
+
+    <h2>Login Form</h2>
+
+    <form method="post" action="/auth">
+        <div class="container">
+            <label for="email"><b>Username</b></label>
+            <input type="email" name="email" id="email" placeholder="Enter Username" class="email" />
+            <label for="password"><b>Password</b></label>
+            <input type="password" name="password" id="password" placeholder="Enter Password" class="password" />
+            <input type="submit" value="Login" class="btn">
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <br/>
+            <br/>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+        </div>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+</head>
+<body class="pattern">
+    <h2>New Order Transaction</h2>
+    <form  method="post" action="/home/newOrder/orderValidation" class="container">
+        <h4>Please enter your order details: </h4>
+
+        <div class="grid3">
+            <div class="grid-item">
+                <label for="warehouse">Warehouse Name:</label>
+                <input type="text" value=<%= warehouse %> name="warehouse" class="small" readonly>
+            </div>
+
+            <div class="grid-item">
+                <label for="district">District Name:</label>
+                <input type="text" value=<%= district %> name="district" class="small" readonly>
+            </div>
+
+            <div class="grid-item">
+                <label for="customerID">Customer ID:</label>
+                <input type="text" value=<%= customer %> name="customerID" class="small" readonly>
+            </div>
+
+            <div class="grid-item">
+                <label for="itemCount">Number of Items:</label>
+                <input type="text" placeholder="Please enter the number of items" name="itemCount" class="small" required>
+            </div>
+        </div>
+        <br/>
+        <label for="ListOfItems">Specify the list of items</label>
+        <div class="container">
+            <div class="grid3">
+                <div class="grid-item">
+                    <label for="Item1Name" class="sub">Item 1 Name:</label>
+                    <input type="text" name="Item1Name" class="small" required>
+                </div>
+                <div class="grid-item">
+                    <label for="Item1SupplyWarehouse" class="sub">Item 1 Supply Warehouse:</label>
+                    <input type="text" name="Item1SupplyWarehouse" class="small" required>
+                </div>
+                <div class="grid-item">
+                    <label for="Item1Quantity" class="sub">Item 1 Quantity:</label>
+                    <input type="text" name="Item1Quantity" class="small" required>
+                </div>
+
+                <div class="grid-item">
+                    <label for="Item2Name" class="sub">Item 2 Name:</label>
+                    <input type="text" name="Item2Name" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item2SupplyWarehouse" class="sub">Item 2 Supply Warehouse:</label>
+                    <input type="text" name="Item2SupplyWarehouse" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item2Quantity" class="sub">Item 2 Quantity:</label>
+                    <input type="text" name="Item2Quantity" class="small" >
+                </div>
+
+                <div class="grid-item">
+                    <label for="Item3Name" class="sub">Item 3 Name:</label>
+                    <input type="text" name="Item3Name" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item3SupplyWarehouse" class="sub">Item 3 Supply Warehouse:</label>
+                    <input type="text" name="Item3SupplyWarehouse" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item3Quantity" class="sub">Item 3 Quantity:</label>
+                    <input type="text" name="Item3Quantity" class="small" >
+                </div>
+
+                <div class="grid-item">
+                    <label for="Item4Name" class="sub">Item 4 Name:</label>
+                    <input type="text" name="Item4Name" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item4SupplyWarehouse" class="sub">Item 4 Supply Warehouse:</label>
+                    <input type="text" name="Item4SupplyWarehouse" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item4Quantity" class="sub">Item 4 Quantity:</label>
+                    <input type="text" name="Item4Quantity" class="small" >
+                </div>
+
+                <div class="grid-item">
+                    <label for="Item5Name" class="sub">Item 5 Name:</label>
+                    <input type="text" name="Item5Name" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item5SupplyWarehouse" class="sub">Item 5 Supply Warehouse:</label>
+                    <input type="text" name="Item5SupplyWarehouse" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item5Quantity" class="sub">Item 5 Quantity:</label>
+                    <input type="text" name="Item5Quantity" class="small" >
+                </div>
+
+                <div class="grid-item">
+                    <label for="Item6Name" class="sub">Item 6 Name:</label>
+                    <input type="text" name="Item6Name" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item6SupplyWarehouse" class="sub">Item 6 Supply Warehouse:</label>
+                    <input type="text" name="Item6SupplyWarehouse" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item6Quantity" class="sub">Item 6 Quantity:</label>
+                    <input type="text" name="Item6Quantity" class="small" >
+                </div>
+
+                <div class="grid-item">
+                    <label for="Item7Name" class="sub">Item 7 Name:</label>
+                    <input type="text" name="Item7Name" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item7SupplyWarehouse" class="sub">Item 7 Supply Warehouse:</label>
+                    <input type="text" name="Item7SupplyWarehouse" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item7Quantity" class="sub">Item 7 Quantity:</label>
+                    <input type="text" name="Item7Quantity" class="small" >
+                </div>
+
+                <div class="grid-item">
+                    <label for="Item8Name" class="sub">Item 8 Name:</label>
+                    <input type="text" name="Item8Name" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item8SupplyWarehouse" class="sub">Item  8 Supply Warehouse:</label>
+                    <input type="text" name="Item8SupplyWarehouse" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item8Quantity" class="sub">Item 8 Quantity:</label>
+                    <input type="text" name="Item8Quantity" class="small" >
+                </div>
+
+                <div class="grid-item">
+                    <label for="Item9Name" class="sub">Item 9 Name:</label>
+                    <input type="text" name="Item9Name" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item9SupplyWarehouse" class="sub">Item 9 Supply Warehouse:</label>
+                    <input type="text" name="Item9SupplyWarehouse" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item9Quantity" class="sub">Item 9 Quantity:</label>
+                    <input type="text" name="Item9Quantity" class="small" >
+                </div>
+
+                <div class="grid-item">
+                    <label for="Item10Name" class="sub">Item 10 Name:</label>
+                    <input type="text" name="Item10Name" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item10SupplyWarehouse" class="sub">Item 10 Supply Warehouse:</label>
+                    <input type="text" name="Item10SupplyWarehouse" class="small" >
+                </div>
+                <div class="grid-item">
+                    <label for="Item10Quantity" class="sub">Item 10 Quantity:</label>
+                    <input type="text" name="Item10Quantity" class="small" >
+                </div>
+            </div>
+
+        </div>
+        <input type="submit" value="Submit" class="btn">
+    </form>
+
+
+</body>
+</html>

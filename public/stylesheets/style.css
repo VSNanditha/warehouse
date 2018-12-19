@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 100%;
+    /*background-color: black;*/
+    /*background-image: repeating-linear-gradient(45deg, transparent, transparent, aqua, aqua 70px);*/
+}
+
+body.pattern {
+    background: linear-gradient(black 50%, rgba(255,255,255,0) 0) 0 0,
+    radial-gradient(black 100%, rgba(255,255,255,0) 0) 0 0,
+    radial-gradient(black 100%, rgba(255,255,255,0) 0) 55px 0 aqua;
+    background-size: 110px 200px;
+    background-repeat: repeat-x;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 100%;
+}
+
+
+h3, h4, label {
+    color: black;
+    font-weight: bold;
+}
+
+/*h2 {*/
+    /*margin: auto;*/
+/*}*/
+
+
+/*form {*/
+    /*border: 3px solid #f1f1f1;*/
+/*}*/
+
+
+input[type=text], input[type=password], [type=email]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+
+input.small {
+    width: 80%;
+    padding: 7px 20px;
+    font-size: small;
+}
+
+button, input[type=submit]
+{
+    background-color: black;
+
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+
+    cursor: pointer;
+    width: 100%;
+    font-size: medium;
+    font-weight: bold;
+}
+
+button:hover
+{
+    opacity: 0.8;
+}
+
+span.password
+{
+    float: right;
+    padding-top: 16px;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px)
+{
+    span.password
+    {
+        display: block;
+        float: none;
+    }
+}
+
+.homelink {
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+    display:block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    opacity: 0.9;
+    background-color: black;
+}
+
+.left:hover, .right:hover {
+    opacity: 1;
+}
+
+.right {
+    right: 0;
+    opacity: 0.8;
+    background-color: aqua;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+}
+
+.grid3 {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    font-weight: normal;
+    font-size: small;
+    padding: 8px;
+    text-align: left;
+}
+
+.grid-item label {
+    padding-right: 15px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+table {
+    border: black;
+    margin: auto;
+    border-collapse: collapse;
+    width: 90%;
+    font-size: small;
+}
+
+td {
+    color: gray;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    padding: 8px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
